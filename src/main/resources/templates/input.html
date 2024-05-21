@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>入力画面</title>
+</head>
+<body>
+	
+	<h1 th:text="${title}"></h1>
+		
+	<h2>Submit your comment:</h2>
+	
+	<form method="post" action="@{/result}">
+		
+		<p>タイトル:<input type="text" name="title" value="タイトルを入力してください"></p>
+		<p>本文:<input type="text" name="textbox" value="共有したいことはありませんか？"></p>
+		
+		<input type="submit" name="submit" value="送信">
+	</form>
+	
+</body>
+</html>
