@@ -2,25 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="Style.css">
 <title>Result</title>
-
-<style>
-	
-h1 {
-  	color: #326693;			/* 見出しテキストの色を指定する */
-	padding-left:10px;		/* ボックス内左側の余白を指定する */
-	border-left: 10px solid rgb(255, 128, 192);	/* ボーダー左側のスタイルを指定する */
-  	border-bottom: 1px dashed rgb(255, 128, 192); 	/* ボーダー下部のスタイルを指定する */
-}
-
-</style>
-
 </head>
 <body>
-
-	<h1>追加されたテキスト</h1>
-	<h2 th:text="${title}"></h2> <!-- コントローラーで渡されたデータを表示 -->
-	<h2 th:text="${textbox}"></h2>
 	
+	<h1>追加されたテキスト</h1>
+	
+		<h2 th:text="${title}"></h2> <!-- コントローラーで渡されたデータを表示 -->
+		<h3 th:text="${textbox}"></h3>
+
 </body>
 </html>

@@ -10,9 +10,9 @@ h1 {
 textarea {
   resize: none;
   width:300px;
-  height:200px; /* texteariaのサイズ固定 */
+  height:200px;
 }
 
 h3 {
-	 white-space: pre-wrap;	 /*改行した際に反映する*/
+	 white-space: pre-wrap; /*改行した際に反映する*/
 }
