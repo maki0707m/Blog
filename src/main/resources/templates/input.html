@@ -2,21 +2,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
 <title>入力画面</title>
 </head>
+
 <body>
 	
-	<h1 th:text="${title}"></h1>
+	<h1 class="h1" th:text="${title}"></h1>
 		
-	<h2>Submit your comment:</h2>
+	<h2>思っていることを自由に書き込んでみましょう</h2>
 	
-	<form method="post" action="@{/result}">
+	
+	<form method="post" th:action="@{/result}">
 		
-		<p>タイトル:<input type="text" name="title" value="タイトルを入力してください"></p>
-		<p>本文:<input type="text" name="textbox" value="共有したいことはありませんか？"></p>
+		<div>タイトル</div>
+		<input type="text" name="title" autocomplete="off"style="width: 700px; height: 50px;" maxlength="30" placeholder="タイトルを入力してください">
+		
+		<div>本文</div>
+			<textarea cols="100" rows="60" type="text" name="textbox" autocomplete="off" maxlength="10000" placeholder="共有したいことはありませんか？"></textarea>
 		
 		<input type="submit" name="submit" value="送信">
+		
 	</form>
+	
 	
 </body>
 </html>

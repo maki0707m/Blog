@@ -3,10 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <title>MyBlog!</title>
+<style>
+	
+h1 {
+  	color: #326693;			/* 見出しテキストの色を指定する */
+	padding-left:10px;		/* ボックス内左側の余白を指定する */
+	border-left: 10px solid rgb(255, 128, 192);	/* ボーダー左側のスタイルを指定する */
+  	border-bottom: 1px dashed rgb(255, 128, 192); 	/* ボーダー下部のスタイルを指定する */
+}
+
+</style>
 </head>
+
 <body>
 	
 	<h1	th:text="${greeting}"></h1>
+	
+	<a th:href="@{/input}">早速ブログを作ってみましょう！</a>
 
 </body>
 </html>

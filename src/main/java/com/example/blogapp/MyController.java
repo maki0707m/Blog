@@ -24,10 +24,11 @@ public class MyController {
 
     @PostMapping("/result")
     public String result(Textform form, Model model) {
-    	System.out.println("title : " + form.getParamA());
-    	System.out.println("textbox : " + form.getParamB());
-        model.addAttribute("form", form ); // テンプレートに渡すデータをモデルに追加
-        return "result"; // 結果を表示するHTMLテンプレートの名前
+    	System.out.println("title : " + form.gettitle());
+    	System.out.println("textbox : " + form.gettextbox());
+        model.addAttribute("title", form.gettitle() ); // テンプレートに渡すデータをモデルに追加
+        model.addAttribute("textbox", form.gettextbox() );
+        return "Result"; // 結果を表示するHTMLテンプレートの名前
     }
 
 }

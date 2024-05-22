@@ -5,16 +5,16 @@ public class Textform {
 	private String title = "";
 	private String textbox = "";
 	
-	public String getParamA() {
+	public String gettitle() {
 		return title;
 	}
-	public void setParamA(String title) {
+	public void settitle(String title) {
 		this.title = title;
 	}
-	public String getParamB() {
+	public String gettextbox() {
 		return textbox;
 	}
-	public void setParamB(String textbox) {
+	public void settextbox(String textbox) {
 		this.textbox = textbox;
 	}
 	
